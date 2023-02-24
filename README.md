@@ -1,2 +1,2 @@
-# gusdira12.github.io
+# the github.io
 site thing woo
