@@ -30,6 +30,7 @@ body {
 }
 
 #innerWrap > #logo {
+    color: #f17587;
     transition: opacity 500ms;
 }
 
@@ -72,13 +73,16 @@ a {
 }
 
 #foot-navigation > a:link, a:visited {
+    color: #ff9eac;
     transition: 300ms ease-out;
 }
 
 #foot-navigation:hover > a {
+    color: #f3c6cd;
     filter: saturate(50%)
 }
 
 #foot-navigation:hover > a:hover {
+    color: #f3c6cd;
     filter: saturate(100%)
 }
