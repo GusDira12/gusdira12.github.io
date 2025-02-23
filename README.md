@@ -1,3 +1,3 @@
-# gusdira12.github.io
+# gus' personal site
 
 maybe this is working now?
