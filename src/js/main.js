@@ -1,4 +1,5 @@
 var clicks = 0; // click counter
+const counter1 = "you've clicked my logo 1 time!"
 
 function buttonMasher() {
     clicks += 1;
@@ -7,5 +8,6 @@ function buttonMasher() {
     const counter = "you've clicked my logo " + clicks + " times!";
 
     // set title to update amount of clicks
-    imgTag.setAttribute("title", counter)
+    if (clicks == 1) imgTag.setAttribute("title", counter1);
+    else imgTag.setAttribute("title", counter);
 }
