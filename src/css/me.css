@@ -1,0 +1,26 @@
+.logo-scooter {
+    max-width: 40pt;
+    max-height: 40pt;
+}
+
+#scooter {
+    display: flex;
+    max-height: max-content;
+    max-width: 40%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* animations and stuff */
+
+#scooter:hover > a {
+    color: #f3c6cd;
+    filter: saturate(30%);
+    transition: 500ms ease-out;
+}
+
+#scooter:hover > a:hover {
+    color: #f17587;
+    filter: saturate(100%);
+    transition: 500ms ease-out;
+}

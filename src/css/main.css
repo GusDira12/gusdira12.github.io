@@ -1,56 +1,57 @@
 * {
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Courier New', Courier, monospace;
     font-size: 12pt;
-    padding: 15pt;
-    background: #222222;
-}
-
-#head-navigation {
-    float: none;
-    position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-family: 'Courier New', Courier, monospace;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #292929;
 }
 
 #outerWrap {
-    overflow: hidden;
+    display: flex;
+    flex-flow: column wrap;
+    overflow: visible;
+    align-items: center;
+    justify-content: center;
+}
+
+#head-navigation, #foot-navigation, #innerWrap {
+    flex: 1;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+
+#head-navigation, #foot-navigation {
+    flex-basis: 10%;
+    max-width: max-content;
+    color: #ff9eac;
 }
 
 #innerWrap {
-    float: none;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#innerWrap > #logo {
-    color: #f17587;
-    transition: opacity 500ms;
-}
-
-#innerWrap > .text-tag {
-    text-align: center;
+    flex-direction: column;
+    flex-basis: 80%;
+    max-width: 80%;
     color: #f17587;
 }
 
-#foot-navigation {
-    float: none;
-    position: absolute;
-    top: 95%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+#logo-gd {
+    max-width: 100pt;
+    max-height: 100pt;
 }
 
-#logo > img {
-    width: 200pt;
-    height: 200pt;
+#logo-gd > img {
     border-radius: 10%;
+}
+
+.text-tag, a {
+    max-height: max-content;
+}
+
+.text-tag {
+    padding: 10pt;
 }
 
 a {
@@ -58,7 +59,14 @@ a {
     padding: 5pt;
 }
 
-#head-navigation > a:link, a:visited {
+#foot-navigation > a > img {
+    max-width: 15pt;
+    max-height: 15pt;
+}
+
+/* animations and stuff */
+
+#head-navigation > a:link, a:visited, #foot-navigation > a:link, a:visited {
     color: #ff9eac;
     transition: 300ms ease-out;
 }
@@ -72,17 +80,12 @@ a {
     color: #f17587;
 }
 
-#foot-navigation > a:link, a:visited {
-    color: #ff9eac;
-    transition: 300ms ease-out;
-}
-
 #foot-navigation:hover > a {
     color: #f3c6cd;
     filter: saturate(50%)
 }
 
 #foot-navigation:hover > a:hover {
-    color: #f3c6cd;
+    color: #f17587;
     filter: saturate(100%)
 }
