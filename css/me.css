@@ -1,14 +1,16 @@
 .logo-scooter {
-    max-width: 40pt;
-    max-height: 40pt;
+    min-width: 40pt;
+    min-height: 40pt;
+    max-width: 20pt;
+    max-height: 20pt;
 }
 
 #scooter {
     display: flex;
     max-height: max-content;
-    max-width: 40%;
+    max-width: 33%;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 /* animations and stuff */
