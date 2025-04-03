@@ -28,13 +28,24 @@ function clickCounter() {
     var counter = "you've clicked my logo " + clicksThisSession + " times!";
     const counter1 = "you've clicked my logo 1 time!";
 
-    // set title to update amount of clicks. 1 time will be plural
+    // set title to update the amount of clicks
     switch (clicksThisSession) {
-        case 1: textMainTag.innerHTML = counter1;
-        case 69: textMainTag.innerHTML = counter + " (nice)";
-        case 100: textMainTag.innerHTML = counter + " you may want to take a break, it's been 100 clicks.";
-        case 1000: textMainTag.innerHTML = counter + " wait, what do you mean 1000 times? you okay?";
-        case 10000: textMainTag.innerHTML = counter + " I give up. I'll keep counting...";
-        default: textMainTag.innerHTML = counter;
+        case 1:
+            textMainTag.innerHTML = counter1;
+            break;
+        case 69:
+            textMainTag.innerHTML = counter + " (nice)";
+            break;
+        case 100:
+            textMainTag.innerHTML = counter + " you may want to take a break, it's been 100 clicks.";
+            break;
+        case 1000:
+            textMainTag.innerHTML = counter + " wait, what do you mean 1000 times? you okay?";
+            break;
+        case 10000:
+            textMainTag.innerHTML = counter + " I give up. I'll keep counting...";
+            break;
+        default:
+            textMainTag.innerHTML = counter;
     }
 }
