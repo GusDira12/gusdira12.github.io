@@ -31,13 +31,23 @@
 
 /* animations and stuff */
 
-#scooter:hover > a {
+#scooter-list > a:link, #scooter-list > a:visited {
+    color: #ff9eac;
+    transition: 500ms ease-in;
+}
+
+#scooter-list > a:hover {
+    color: #f3c6cd;
+    transition: 500ms ease-in;
+}
+
+#scooter-list:hover > a {
     color: #f3c6cd;
     filter: saturate(30%);
     transition: 500ms ease-out;
 }
 
-#scooter:hover > a:hover {
+#scooter-list:hover > a:hover {
     color: #f17587;
     filter: saturate(100%);
     transition: 500ms ease-out;

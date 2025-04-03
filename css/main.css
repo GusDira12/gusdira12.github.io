@@ -70,9 +70,9 @@ a {
 
 /* animations and stuff */
 
-#head-navigation > a:link, a:visited, #foot-navigation > a:link, a:visited {
+#head-navigation > a:link, #head-navigation > a:visited, #foot-navigation > a:link, #foot-navigation > a:visited {
     color: #ff9eac;
-    transition: 300ms ease-out;
+    transition: 300ms ease-in;
 }
 
 #head-navigation > a:hover {
@@ -86,10 +86,12 @@ a {
 
 #foot-navigation:hover > a {
     color: #f3c6cd;
-    filter: saturate(50%)
+    filter: saturate(50%);
+    transition: 300ms ease-out;
 }
 
 #foot-navigation:hover > a:hover {
     color: #f17587;
-    filter: saturate(100%)
+    filter: saturate(100%);
+    transition: 300ms ease-out;
 }
