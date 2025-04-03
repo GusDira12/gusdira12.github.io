@@ -1,8 +1,9 @@
 // -= global things.. =-
 
-var innerWrapTag, profileGusTag, profileSautTag = "";
+var titleTag, innerWrapTag, profileGusTag, profileSautTag = "";
 
 window.onload = function() {
+    titleTag = document.getElementsByTagName("title");
     innerWrapTag = document.getElementById("innerWrap"); 
     profileGusTag = document.getElementById("profile-gus");
     profileSautTag = document.getElementById("profile-saut");
@@ -10,10 +11,21 @@ window.onload = function() {
 
 // -= changes a thing or 2 from gus to saut =-
 
-function changeGusToSaut() {
-    profileGusTag.setAttribute("style", "visibility: hidden; max-height: 0;");
-    profileSautTag.setAttribute("style", "");
+const titleGus = "who is this gus person?";
+const titleSaut = "who is this saut person?";
 
-    var titleTag = document.getElementsByTagName("title");
-    titleTag.item(0).innerHTML = "who is this saut person?";
+const hiddenStyle = "visibility: hidden; max-height: 0;";
+
+function changeGusToSaut() {
+    if (!profileGusTag.getAttribute("style")) {
+        profileGusTag.setAttribute("style", hiddenStyle);
+        profileSautTag.setAttribute("style", "");
+
+        titleTag.item(0).innerHTML = titleSaut;
+    } else {
+        profileSautTag.setAttribute("style", hiddenStyle);
+        profileGusTag.setAttribute("style", "");
+
+        titleTag.item(0).innerHTML = titleGus;
+    }
 }
