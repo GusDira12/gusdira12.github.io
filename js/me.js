@@ -14,6 +14,9 @@ function changeGusToSaut() {
     textMainTag.item(0).hidden = true;
     textMainTag.item(1).hidden = false;
 
+    var titleTag = document.getElementsByTagName("title");
+    titleTag.item(0).innerHTML = "who is this saut person?";
+
     var photoTag = innerWrapTag.getElementsByTagName("img").item(0);
     photoTag.src = "./img/scooters/saut.png";
     photoTag.title = "I'm no longer being used";
