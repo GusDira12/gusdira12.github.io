@@ -21,10 +21,14 @@ function changeGusToSaut() {
         profileGusTag.setAttribute("style", hiddenStyle);
         profileSautTag.setAttribute("style", "");
 
+        document.getElementById("scooter").setAttribute("style", "");
+
         titleTag.item(0).innerHTML = titleSaut;
     } else {
         profileSautTag.setAttribute("style", hiddenStyle);
         profileGusTag.setAttribute("style", "");
+
+        document.getElementById("scooter").setAttribute("style", hiddenStyle);
 
         titleTag.item(0).innerHTML = titleGus;
     }

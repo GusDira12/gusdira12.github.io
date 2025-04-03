@@ -7,14 +7,18 @@
 
 #scooter {
     display: flex;
+    flex-direction: column;
+    max-height: max-content;
+    align-items: center;
+    justify-content: center;
+}
+
+#scooter-list {
+    display: flex;
     max-height: max-content;
     max-width: 40%;
     align-items: center;
     justify-content: space-between;
-}
-
-#scooter > a {
-    flex: 1;
 }
 
 #profile-gus, #profile-saut {
