@@ -17,7 +17,6 @@
 }
 
 #head-navigation, #foot-navigation, #innerWrap {
-    flex: 1;
     display: flex;
     text-align: center;
     align-items: center;
@@ -35,17 +34,6 @@
     flex-basis: 80%;
     max-width: 80%;
     color: #f17587;
-}
-
-#logo-gd {
-    max-width: 100pt;
-    max-height: 100pt;
-    min-width: 50pt;
-    min-height: 50pt;
-}
-
-#logo-gd > img {
-    border-radius: 10%;
 }
 
 .text-tag, a {
