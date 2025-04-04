@@ -1,3 +1,5 @@
 # gus' personal site
 
-maybe this is working now?
+a website so bad it makes my own ancestors cry
+
+anyways hello
