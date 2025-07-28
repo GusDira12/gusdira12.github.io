@@ -31,7 +31,7 @@
 
 /* animations and stuff */
 
-#scooter-list > a:link, #scooter-list > a:visited {
+/* #scooter-list > a:link, #scooter-list > a:visited {
     color: #ff9eac;
     transition: 500ms ease-in;
 }
@@ -51,4 +51,4 @@
     color: #f17587;
     filter: saturate(100%);
     transition: 500ms ease-out;
-}
+} */

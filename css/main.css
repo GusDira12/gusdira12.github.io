@@ -23,7 +23,7 @@
     justify-content: center;
 }
 
-#head-navigation, #foot-navigation {
+#head-navigation, #foot-navigation, a, a:visited {
     flex-basis: 10%;
     max-width: max-content;
     color: #ff9eac;
@@ -58,7 +58,7 @@ a {
 
 /* animations and stuff */
 
-#head-navigation > a:link, #head-navigation > a:visited, #foot-navigation > a:link, #foot-navigation > a:visited {
+/* #head-navigation > a:link, #head-navigation > a:visited, #foot-navigation > a:link, #foot-navigation > a:visited {
     color: #ff9eac;
     transition: 300ms ease-in;
 }
@@ -82,4 +82,4 @@ a {
     color: #f17587;
     filter: saturate(100%);
     transition: 300ms ease-out;
-}
+} */
