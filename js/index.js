@@ -68,6 +68,9 @@ function clickPopUp(clicksThisSession) {
         case 1:
             textMainTag.innerHTML = counter1 + optOut;
             break;
+        case 12:
+            textMainTag.innerHTML = counter + " my favourite number ! " + optOut;
+            break;
         case 69:
             textMainTag.innerHTML = counter + " (nice)" + optOut;
             break;

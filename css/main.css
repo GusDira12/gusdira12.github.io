@@ -30,7 +30,8 @@
 }
 
 #innerWrap {
-    flex-direction: column;
+    flex-basis: auto;
+    flex-flow: column wrap;
     flex-basis: 80%;
     max-width: 80%;
     color: #f17587;
